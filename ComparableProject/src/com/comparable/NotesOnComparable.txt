@@ -1,0 +1,28 @@
+Comparable Interface
+
+1. Refer to Player class.
+2. Refer to PlayerSorter class.
+3. Player class implements Comparable interface.
+4. Comparable interface has a single method compareTo(arg). This needs to be overridden 
+in the Person Player class as it implements the Comparable interface.
+5. In this example, compareTo() method compares the rank attribute and sorts according to 
+the rank attribute.
+	The sorting order is decided by the return value of the compareTo() method. 
+	The Integer.compare(x, y) returns -1 if x is less than y, 0 if they’re equal, and 1 otherwise.
+
+Comparator Interface
+1. In the Player class, we compare using the rank attribute. 
+Suppose, if we need to sort as per the name attribute or the age attribute, 
+we will need to modify the Comparable interface's compareTo method.
+2. Using Comparator interface, we can create different implementations such as 
+AgeComparator, NameComparator or NameComparator and override the compare() method accordingly.
+3. Refer to AgeComparator, NameComparator classes.
+4. To use them in Collection.sort(), include the type of comparator implementation as 
+an argument in Collection.sort(list, comparatorimpl)
+5. Refer PlayerSorter class for the implementation.
+
+
+
+
+
+	
